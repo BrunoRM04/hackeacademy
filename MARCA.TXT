@@ -1,0 +1,2 @@
+NEGRO: #232222
+GRIS: #ecedec

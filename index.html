@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacke Academy | Inicio</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="shortcut icon" href="public/img/logos/logo-icono-negro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="encabezado-principal">
+
+        <div class="contenedor-logo">
+            <a href="index.html">
+                <img src="public/img/logos/logo-grande-gris.png" alt="Logo de la empresa">
+            </a>
+        </div>
+
+        <div class="icono-hamburguesa" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="navegacion-principal" id="menu">
+                <li class="navegacion-item"><a href="#">Inicio</a></li>
+                <li class="navegacion-item">
+                    <a href="https://wa.me/59891087556" class="boton-destacado" target="_blank">Contactarnos Ahora ➜</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="seccion-principal">
+            <div class="contenedor-texto-principal">
+                <p class="texto-bienvenida">Bienvenido a Hacke Academy</p>
+                <h1 class="titulo-principal">Descubre el futuro de tu formación con nuestros cursos</h1>
+                <p class="parrafo-principal">
+                    Accede a programas intensivos con becas y descuentos disponibles, diseñados para
+                    impulsar tu carrera en tecnología y diseño.
+                </p>
+                <div class="contenedor-botones">
+                    <button class="boton-accion boton-accion-primario"
+                        onclick="window.open('https://wa.me/59891234567?text=Buenas,%20me%20comunico%20desde%20su%20sitio%20web%20para%20consultar%20sobre%20la%20disponibilidad%20de%20becas%20para%20uno%20de%20sus%20cursos.%20Quedo%20atento%20a%20su%20respuesta.', '_blank')">
+                        Consultar becas
+                    </button>
+                    <button class="boton-accion boton-accion-secundario"
+                        onclick="document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' });">
+                        Ver cursos disponibles
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor-imagen-principal">
+                <div class="decoracion-onda"></div>
+                <img src="public/img/png/ilustracion-01.png" alt="Foto Ilustración Hacke">
+            </div>
+        </section>
+
+        <section id="cursos" class="seccion-secundaria">
+            <div class="contenedor-texto-secundaria">
+                <p class="texto-bienvenida-secundaria">Curso de Inicio en Diseño Gráfico con Photoshop</p>
+                <h1 class="titulo-secundaria">Aprende Photoshop desde cero en 5 semanas</h1>
+                <p class="parrafo-secundaria">
+                    Ideal para quienes inician en el diseño digital: aprenderás edición de imágenes, composiciones
+                    gráficas y preparación de archivos para redes, impresión y proyectos básicos.
+                </p>
+                <div class="contenedor-botones-secundaria">
+                    <button id="abrir-info-photoshop"
+                        class="boton-accion-secundaria boton-primario-secundaria boton-info-curso"
+                        data-curso="photoshop-inicio">
+                        Más información
+                    </button>
+                    <button id="abrir-pantalla-1" class="boton-accion-secundaria boton-secundario-secundaria"
+                        data-pdf="public/pdf/Plan De Estudio (Inicio en el diseño gráfico con Photoshop) - Academy Hacke.pdf">
+                        Descargar programa
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor-imagen-secundaria">
+                <div class="decoracion-onda-secundaria"></div>
+                <img src="public/img/png/ilustracion-02.png" alt="Foto Ilustración Hacke">
+            </div>
+        </section>
+
+        <section class="seccion-principal">
+            <div class="contenedor-texto-principal">
+                <p class="texto-bienvenida">Curso de Especialización en diseño deportivo con Photoshop</p>
+                <h1 class="titulo-principal">Uno de los cursos más recomendados</h1>
+                <p class="parrafo-principal">
+                    Curso intensivo de 5 semanas (20 hs) en modalidad online y en vivo.
+                    Aprende a crear piezas gráficas deportivas modernas: posters, flyers,
+                    plantillas para redes y merchandising. Incluye prácticas, evaluaciones y
+                    certificado oficial.
+                </p>
+                <div class="contenedor-botones">
+                    <button class="boton-accion boton-accion-primario boton-info-curso"
+                        data-curso="photoshop-deportivo">
+                        Más información
+                    </button>
+                    <button id="abrir-pantalla-2" class="boton-accion boton-accion-secundario"
+                        data-pdf="public/pdf/Plan De Estudio (Especialización en diseño deportivo con Photoshop) - Academy Hacke.pdf">
+                        Descargar programa
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor-imagen-principal">
+                <div class="decoracion-onda"></div>
+                <img src="public/img/png/ilustracion-03.png" alt="Ilustración Diseño Deportivo">
+            </div>
+        </section>
+
+        <section class="seccion-secundaria">
+            <div class="contenedor-texto-secundaria">
+                <p class="texto-bienvenida-secundaria">Curso de Diseño de Marca y Branding en Photoshop</p>
+                <h1 class="titulo-secundaria">Crea identidades visuales profesionales en 6 semanas</h1>
+                <p class="parrafo-secundaria">
+                    Aprende a diseñar logotipos, paletas de color, tipografías y manuales básicos de marca.
+                    Domina Photoshop aplicado al branding y desarrolla proyectos listos para clientes:
+                    tarjetas, banners, portadas y mockups digitales o impresos.
+                </p>
+                <div class="contenedor-botones-secundaria">
+                    <button class="boton-accion-secundaria boton-primario-secundaria boton-info-curso"
+                        data-curso="branding">
+                        Más información
+                    </button>
+                    <button id="abrir-pantalla-3" class="boton-accion-secundaria boton-secundario-secundaria"
+                        data-pdf="public/pdf/Plan De Estudio (Diseño de marca y branding en Photoshop) - Academy Hacke.pdf">
+                        Descargar programa
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor-imagen-secundaria">
+                <div class="decoracion-onda-secundaria"></div>
+                <img src="public/img/png/ilustracion-04.png" alt="Ilustración Diseño de Marca">
+            </div>
+        </section>
+
+        <div id="pantalla-descarga" class="pantalla-descarga">
+            <div class="contenido-pantalla">
+                <span id="cerrar-pantalla" class="cerrar-pantalla">&times;</span>
+                <h2 id="titulo-overlay">Descargar Programa</h2>
+                <p>Ingrese su correo electrónico para continuar</p>
+                <input type="email" id="correo-pantalla" placeholder="ejemplo@correo.com" required>
+                <button id="btn-descargar-pantalla">Descargar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-izquierda">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay.</li>
+                    <li><i class="fas fa-phone-alt"></i> +598 91 087 556</li>
+                    <li><i class="fas fa-envelope"></i>
+                        <a href="mailto:soporte@hackeacademy.com">soporte@hackeacademy.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-centro">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-derecha">
+                <h4>Sobre la academia</h4>
+                <p>
+                    Formación intensiva en tecnología y diseño.
+                    Impulsamos tu carrera con programas de calidad,
+                    becas y experiencias reales en la industria.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="footer-inferior">
+        <p>© 2025 Hacke Academy | Todos los derechos reservados</p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCtilk3_GwDNkp6CmNIaxN5I1mtywwMeLc",
+            authDomain: "academyhacke.firebaseapp.com",
+            projectId: "academyhacke",
+            storageBucket: "academyhacke.firebasestorage.app",
+            messagingSenderId: "168783226017",
+            appId: "1:168783226017:web:2751a058b316399c06bce0",
+            measurementId: "G-3XK132Y4MZ"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const botones = document.querySelectorAll("[data-pdf]");
+            const pantalla = document.getElementById("pantalla-descarga");
+            const cerrarPantalla = document.getElementById("cerrar-pantalla");
+            const btnDescargar = document.getElementById("btn-descargar-pantalla");
+            const inputCorreo = document.getElementById("correo-pantalla");
+            const tituloOverlay = document.getElementById("titulo-overlay");
+
+            let pdfSeleccionado = "";
+
+            botones.forEach(boton => {
+                boton.addEventListener("click", () => {
+                    pdfSeleccionado = boton.getAttribute("data-pdf");
+                    const curso = boton.closest("section").querySelector("h1").textContent;
+                    tituloOverlay.textContent = `Descargar Programa – ${curso}`;
+                    pantalla.style.display = "flex";
+                    document.body.style.overflow = "hidden";
+                    window.scrollTo(0, 0);
+                });
+            });
+
+            cerrarPantalla.addEventListener("click", () => {
+                pantalla.style.display = "none";
+                document.body.style.overflow = "auto";
+            });
+
+            btnDescargar.addEventListener("click", async () => {
+                const correo = inputCorreo.value.trim();
+                if (!correo) {
+                    alert("Por favor, ingrese su correo electrónico.");
+                    return;
+                }
+
+                try {
+                    await addDoc(collection(db, "descargas"), {
+                        correo: correo,
+                        plan: pdfSeleccionado.split("/").pop(),
+                        fecha: serverTimestamp()
+                    });
+                    console.log("✅ Descarga registrada en Firebase");
+                } catch (error) {
+                    console.error("❌ Error guardando en Firestore:", error);
+                }
+
+                const link = document.createElement("a");
+                link.href = pdfSeleccionado;
+                link.download = pdfSeleccionado.split("/").pop();
+                link.click();
+
+                pantalla.style.display = "none";
+                document.body.style.overflow = "auto";
+            });
+        });
+    </script>
+
+    <script>
+
+        // MENU //
+
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("abierto");
+            toggle.classList.toggle("activo");
+
+            const icon = toggle.querySelector("i");
+            if (menu.classList.contains("abierto")) {
+                icon.classList.replace("fa-bars", "fa-times");
+            } else {
+                icon.classList.replace("fa-times", "fa-bars");
+            }
+        });
+
+        // MENU //
+
+        // DIRECCIÓN DE CURSOS //
+
+        const botonesInfo = document.querySelectorAll(".boton-info-curso");
+
+        botonesInfo.forEach(boton => {
+            boton.addEventListener("click", () => {
+                const curso = boton.getAttribute("data-curso");
+                window.location.href = `inscripcion.html?curso=${curso}`;
+            });
+        });
+
+        // DIRECCIÓN DE CURSOS //
+
+    </script>
+
+</body>
+
+</html>

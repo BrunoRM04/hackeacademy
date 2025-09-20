@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacke Academy | Inscripción</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="shortcut icon" href="public/img/logos/logo-icono-negro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="encabezado-principal">
+
+        <div class="contenedor-logo">
+            <a href="index.html">
+                <img src="public/img/logos/logo-grande-gris.png" alt="Logo de la empresa">
+            </a>
+        </div>
+
+        <div class="icono-hamburguesa" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="navegacion-principal" id="menu">
+                <li class="navegacion-item"><a href="index.html">Inicio</a></li>
+                <li class="navegacion-item">
+                    <a href="https://wa.me/59891087556" class="boton-destacado" target="_blank">Contactarnos Ahora ➜</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="seccion-inscripcion-instituto">
+            <div class="columna-instituto-info" id="info-curso">
+                <h2>Cargando información del curso...</h2>
+            </div>
+
+            <div class="columna-formulario-inscripcion">
+                <h2 class="columna-formulario-inscripcion__titulo">Formulario de Inscripción</h2>
+                <form id="formulario-inscripcion" class="formulario-inscripcion">
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="formulario-inscripcion__input" required>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="formulario-inscripcion__input" required>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="dni">Documento</label>
+                        <input type="text" id="dni" name="dni" class="formulario-inscripcion__input" required>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="formulario-inscripcion__input" required>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="formulario-inscripcion__input" required>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" class="formulario-inscripcion__input">
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="pais">País</label>
+                        <select id="pais" name="pais" class="formulario-inscripcion__select" required>
+                            <option value="">Seleccione su país...</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="costa-rica">Costa Rica</option>
+                            <option value="cuba">Cuba</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="el-salvador">El Salvador</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="honduras">Honduras</option>
+                            <option value="mexico">México</option>
+                            <option value="nicaragua">Nicaragua</option>
+                            <option value="panama">Panamá</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="peru">Perú</option>
+                            <option value="puerto-rico">Puerto Rico</option>
+                            <option value="republica-dominicana">República Dominicana</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="curso">Curso</label>
+                        <select id="curso" name="curso" class="formulario-inscripcion__select" required>
+                            <option value="">Seleccione...</option>
+                            <option value="photoshop-inicio">Inicios en Diseño Gráfico con Photoshop</option>
+                            <option value="photoshop-deportivo">Especialización en Diseño Deportivo con Photoshop
+                            </option>
+                            <option value="branding">Diseño de Marca y Branding en Photoshop</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo">
+                        <label for="fecha-nac">Fecha de nacimiento</label>
+                        <input type="date" id="fecha-nac" name="fecha-nac" class="formulario-inscripcion__input">
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="beca">Solicitud de beca (%)</label>
+                        <select id="beca" name="beca" class="formulario-inscripcion__select">
+                            <option value="0">0% (sin beca)</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="diploma">¿Desea realizar el curso con diploma de aprobación?</label>
+                        <select id="diploma" name="diploma" class="formulario-inscripcion__select" required>
+                            <option value="">Seleccione...</option>
+                            <option value="si">Sí (precio completo con diploma)</option>
+                            <option value="no">No (50% del precio, sin diploma)</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-inscripcion__grupo formulario-inscripcion__grupo--completo">
+                        <label for="cuotas">¿En cuántas cuotas desea abonar?</label>
+                        <select id="cuotas" name="cuotas" class="formulario-inscripcion__select" required>
+                            <option value="">Seleccione...</option>
+                            <option value="1">1 cuota</option>
+                            <option value="2">2 cuotas</option>
+                            <option value="3">3 cuotas</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="formulario-inscripcion__boton">
+                        Enviar inscripción
+                    </button>
+                </form>
+            </div>
+
+            <div class="pantalla-gracias" id="pantalla-gracias">
+                <h1>¡Muchas gracias por tu inscripción!</h1>
+                <p>Nos comunicaremos contigo vía Whatsapp para abonar el curso enseguida.</p>
+                <button id="cerrar-gracias">Cerrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+
+            <div class="footer-izquierda">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay.</li>
+                    <li><i class="fas fa-phone-alt"></i> +598 91 087 556</li>
+                    <li><i class="fas fa-envelope"></i>
+                        <a href="mailto:soporte@hackeacademy.com">soporte@hackeacademy.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-centro">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-derecha">
+                <h4>Sobre la academia</h4>
+                <p>
+                    Formación intensiva en tecnología y diseño.
+                    Impulsamos tu carrera con programas de calidad,
+                    becas y experiencias reales en la industria.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="footer-inferior">
+        <p>© 2025 Hacke Academy | Todos los derechos reservados</p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCtilk3_GwDNkp6CmNIaxN5I1mtywwMeLc",
+            authDomain: "academyhacke.firebaseapp.com",
+            projectId: "academyhacke",
+            storageBucket: "academyhacke.firebasestorage.app",
+            messagingSenderId: "168783226017",
+            appId: "1:168783226017:web:2751a058b316399c06bce0",
+            measurementId: "G-3XK132Y4MZ"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const formulario = document.getElementById("formulario-inscripcion");
+            const pantallaGracias = document.getElementById("pantalla-gracias");
+            const botonCerrar = document.getElementById("cerrar-gracias");
+
+            formulario.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const datos = Object.fromEntries(new FormData(formulario).entries());
+
+                try {
+                    await addDoc(collection(db, "inscriptos"), {
+                        ...datos,
+                        fecha: serverTimestamp()
+                    });
+
+                    console.log("✅ Inscripción guardada en Firebase");
+
+                    pantallaGracias.classList.add("activa");
+                    document.body.style.overflow = "hidden";
+                    window.scrollTo({ top: 0, behavior: "instant" });
+
+                } catch (error) {
+                    console.error("❌ Error guardando inscripción:", error);
+                    alert("Ocurrió un error al guardar la inscripción. Intente de nuevo.");
+                }
+            });
+
+            botonCerrar.addEventListener("click", () => {
+                pantallaGracias.classList.remove("activa");
+                document.body.style.overflow = "auto";
+            });
+        });
+    </script>
+
+    <script>
+
+        // MENU //
+
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("abierto");
+            toggle.classList.toggle("activo");
+
+            const icon = toggle.querySelector("i");
+            if (menu.classList.contains("abierto")) {
+                icon.classList.replace("fa-bars", "fa-times");
+            } else {
+                icon.classList.replace("fa-times", "fa-bars");
+            }
+        });
+
+        // MENU //
+
+        // CURSOS //
+
+        const params = new URLSearchParams(window.location.search);
+        const curso = params.get("curso");
+
+        const cursos = {
+            "photoshop-inicio": {
+                titulo: "Inicios en Diseño Gráfico con Photoshop",
+                resumen: "Duración: 5 semanas (20hs) - 2 clases semanales - Modalidad online en vivo",
+                precio: 30,
+                contenido: `
+      <p><strong>Horarios:</strong> Lunes y viernes, 18:00 a 19:30 hs (Horario Uruguay)</p>
+      <p><strong>Comienzo:</strong> 10 de octubre del 2025</p>
+
+      <h4>Introducción</h4>
+      <p>
+        Curso pensado para quienes se inician en el diseño gráfico con Adobe Photoshop. 
+        Combina teoría y práctica para que en pocas semanas logres manejar funciones básicas 
+        y crear piezas gráficas simples para redes e impresión.
+      </p>
+
+      <h4>Salidas laborales</h4>
+      <ul>
+        <li>Diseñador/a gráfico/a junior en agencias o empresas.</li>
+        <li>Freelance en diseño digital.</li>
+        <li>Community manager con enfoque visual.</li>
+      </ul>
+
+      <h4>Certificado</h4>
+      <p>
+        Incluye 2 evaluaciones parciales y 1 final. 
+        Nota mínima de aprobación: 7. Todas las clases quedan grabadas.
+      </p>
+
+      <h4>Medios de pago</h4>
+      <ul>
+        <li>PayPal con opción en moneda local.</li>
+        <li>Hasta 3 cuotas sin interés.</li>
+        <li>Consultar becas vigentes.</li>
+      </ul>
+    `
+            },
+            "photoshop-deportivo": {
+                titulo: "Especialización en Diseño Deportivo con Photoshop",
+                resumen: "Duración: 5 semanas (20hs) - 2 clases semanales - Modalidad online en vivo",
+                precio: 50,
+                contenido: `
+      <p><strong>Horarios:</strong> Lunes y viernes, 20:00 a 21:30 hs (Horario Uruguay)</p>
+      <p><strong>Comienzo:</strong> 10 de octubre del 2025</p>
+
+      <h4>Introducción</h4>
+      <p>
+        Curso intensivo para estudiantes, diseñadores y amantes del deporte que deseen crear piezas gráficas 
+        modernas en el ámbito deportivo. Aprenderás a diseñar carteles, plantillas para redes sociales y 
+        merchandising con un enfoque profesional y práctico.
+      </p>
+
+      <h4>Salidas laborales</h4>
+      <ul>
+        <li>Diseñador/a freelance especializado/a en deportes.</li>
+        <li>Community manager deportivo con foco visual.</li>
+        <li>Diseñador/a en clubes, academias, gimnasios o marcas deportivas.</li>
+        <li>Colaborador/a en agencias que gestionen eventos o marcas deportivas.</li>
+      </ul>
+
+      <h4>Certificado</h4>
+      <p>
+        Incluye 2 pruebas parciales y 1 final integradora. 
+        Nota mínima de aprobación: 7. Todas las clases quedan grabadas.
+      </p>
+
+      <h4>Medios de pago</h4>
+      <ul>
+        <li>PayPal con opción en moneda local.</li>
+        <li>Hasta 3 cuotas sin interés.</li>
+        <li>Consultar becas vigentes.</li>
+      </ul>
+    `
+            },
+            "branding": {
+                titulo: "Diseño de Marca y Branding en Photoshop",
+                resumen: "Duración: 6 semanas (24hs) - 2 clases semanales - Modalidad online en vivo",
+                precio: 50,
+                contenido: `
+      <p><strong>Horarios:</strong> Lunes y viernes, 16:00 a 17:30 hs (Horario Uruguay)</p>
+      <p><strong>Comienzo:</strong> 10 de octubre del 2025</p>
+
+      <h4>Introducción</h4>
+      <p>
+        Curso práctico para quienes deseen crear identidades visuales desde cero con Photoshop. 
+        Aprenderás a diseñar logotipos, paletas de color, tipografías y un manual de marca básico, 
+        aplicando conceptos de branding en piezas digitales e impresas.
+      </p>
+
+      <h4>Salidas laborales</h4>
+      <ul>
+        <li>Diseñador/a gráfico/a junior especializado/a en branding.</li>
+        <li>Freelance en identidad visual para pymes y startups.</li>
+        <li>Colaborador/a en agencias de publicidad o estudios de diseño.</li>
+        <li>Diseñador/a de contenido visual coherente para redes y marcas personales.</li>
+      </ul>
+
+      <h4>Certificado</h4>
+      <p>
+        Incluye 2 evaluaciones parciales y 1 final integradora. 
+        Nota mínima de aprobación: 7. Todas las clases quedan grabadas.
+      </p>
+
+      <h4>Medios de pago</h4>
+      <ul>
+        <li>PayPal con opción en moneda local.</li>
+        <li>Hasta 3 cuotas sin interés.</li>
+        <li>Consultar becas vigentes.</li>
+      </ul>
+    `
+            }
+        };
+
+        const infoDiv = document.getElementById("info-curso");
+
+        if (cursos[curso]) {
+            const cursoData = cursos[curso];
+            const precioNormal = cursoData.precio;
+            const precioSinDiploma = precioNormal / 2;
+
+            infoDiv.innerHTML = `
+    <h2>${cursoData.titulo}</h2>
+    <p>${cursoData.resumen}</p>
+    <p><strong>Precio:</strong> ${precioNormal} USD (hasta 3 cuotas sin interés en moneda local)<br>
+    <strong> Precio sin diploma de aprobación: </strong> ${precioSinDiploma} USD</p>
+    ${cursoData.contenido}
+  `;
+
+            const selectCurso = document.getElementById("curso");
+            if (selectCurso) {
+                selectCurso.value = curso;
+            }
+        } else {
+            infoDiv.innerHTML = `
+    <h2>Información del curso</h2>
+    <p>Selecciona un curso válido desde la sección de cursos.</p>
+  `;
+        }
+
+        document.getElementById("formulario-inscripcion").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            document.getElementById("pantalla-gracias").classList.add("activa");
+        });
+
+        // CURSOS //
+
+        // AGRADECIMIENTO - PANTALLA //
+
+        const formulario = document.querySelector(".formulario-inscripcion");
+        const pantallaGracias = document.getElementById("pantalla-gracias");
+        const botonCerrar = document.getElementById("cerrar-gracias");
+
+        formulario.addEventListener("submit", function (e) {
+            e.preventDefault();
+            pantallaGracias.classList.add("activa");
+
+            document.body.style.overflow = "hidden";
+
+            window.scrollTo({ top: 0, behavior: "instant" });
+        });
+
+        botonCerrar.addEventListener("click", () => {
+            pantallaGracias.classList.remove("activa");
+
+            document.body.style.overflow = "auto";
+        });
+
+        // AGRADECIMIENTO - PANTALLA //
+
+    </script>
+
+</body>
+
+</html>
