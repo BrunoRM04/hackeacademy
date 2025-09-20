@@ -80,7 +80,7 @@
                         Más información
                     </button>
                     <button id="abrir-pantalla-1" class="boton-accion-secundaria boton-secundario-secundaria"
-                        data-pdf="public/pdf/Plan De Estudio (Inicio en el diseño gráfico con Photoshop) - Academy Hacke.pdf">
+                        data-pdf="https://drive.google.com/file/d/1JIvxFhZ8mu8pY5O5niTXORnXFHKvXmuR/view?usp=drive_link">
                         Descargar programa
                     </button>
                 </div>
@@ -108,7 +108,7 @@
                         Más información
                     </button>
                     <button id="abrir-pantalla-2" class="boton-accion boton-accion-secundario"
-                        data-pdf="public/pdf/Plan De Estudio (Especialización en diseño deportivo con Photoshop) - Academy Hacke.pdf">
+                        data-pdf="https://drive.google.com/file/d/1eyJCZySVzALeap-OLOgfDENt3XGcC9ga/view?usp=sharing">
                         Descargar programa
                     </button>
                 </div>
@@ -135,7 +135,7 @@
                         Más información
                     </button>
                     <button id="abrir-pantalla-3" class="boton-accion-secundaria boton-secundario-secundaria"
-                        data-pdf="public/pdf/Plan De Estudio (Diseño de marca y branding en Photoshop) - Academy Hacke.pdf">
+                        data-pdf="https://drive.google.com/file/d/1E9aBYjD5kM1GwW9IlNk-bjniidtSx1In/view?usp=drive_link">
                         Descargar programa
                     </button>
                 </div>
@@ -266,10 +266,7 @@
                     console.error("❌ Error guardando en Firestore:", error);
                 }
 
-                const link = document.createElement("a");
-                link.href = pdfSeleccionado;
-                link.download = pdfSeleccionado.split("/").pop();
-                link.click();
+                window.open(pdfSeleccionado, "_blank");
 
                 pantalla.style.display = "none";
                 document.body.style.overflow = "auto";
